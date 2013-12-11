@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="css/app.jamesjnadeau.com.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.0-rc.1.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		
+		<script type="text/javascript" charset="utf-8" src="js/basket.full.min.js"></script>
+		
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+			site_protocal = 'http';
+			site_domain = 'app.jamesjnadeau.com';
+			document.addEventListener("deviceready", function()
+			{
+				basket.require({ url: site_protocal+"://"+site_domain+"/jquery.mobile.app/basket_loader.js", key: site_domain+'_basket', expire: 24});
+			});
+		</script>
+		<script type="text/javascript" charset="utf-8" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+		
+	</head>
+	<body class="ui-mobile-viewport ui-overlay-c" >
+		<div data-role="page" id="home" data-url="home" >
+			<div data-role="header">
+				<h3 style="text-align: center; margin: 5px; ">By James Nadeau</h3>
+			</div>
+			<div data-role="content" id="index-content" >
+			</div>
+		</div>
+		<div id="data" style="display:none;"></div>
+	</body>
+</html>
+

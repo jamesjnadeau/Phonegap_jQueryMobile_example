@@ -1,0 +1,233 @@
+/*
+ * Custom Transition Styling
+ * see: http://jquerymobile.com/test/docs/pages/page-customtransitions.html
+ */
+.in {
+	-webkit-animation-duration: 650ms;
+	-moz-animation-duration: 650ms;
+	/* from: https://github.com/jquery/jquery-mobile/commit/fbbcf9e16ed2978547f1460c66f533157714371d
+	 */
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+}
+
+.out {
+	-webkit-animation-duration: 525ms;
+	-moz-animation-duration: 525;
+	/* from: https://github.com/jquery/jquery-mobile/commit/fbbcf9e16ed2978547f1460c66f533157714371d
+	 */
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+}
+
+/*
+ * Don't allow word wrapping
+ */
+.ui-header .ui-title, .ui-li-heading, .notrunc 
+{
+	overflow: visible !important;
+	white-space: normal !important;
+}
+
+/* 
+ * notification boxes
+ */
+.error, .alert, .notice, .success, .info {padding:0.8em;margin-bottom:1em;border:2px solid #ddd;}
+.error, .alert {background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4;}
+.notice {background:#fff6bf;color:#514721;border-color:#ffd324;}
+.success {background:#e6efc2;color:#264409;border-color:#c6d880;}
+.info {background:#d5edf8;color:#205791;border-color:#92cae4;}
+.error a, .alert a {color:#8a1f11;}
+.notice a {color:#514721;}
+.success a {color:#264409;}
+.info a {color:#205791;}
+
+/*
+ * Other useful stylings
+ */
+.break-word {word-wrap: break-word;}
+.overflow-hidden {overflow: hidden;}
+.text-right {text-align:right;}
+.text-left {text-align:left;}
+.text-center {text-align: center;}
+.margin-less{margin: 0em ! important;}
+.right {float: right;}
+.left {float: left;}
+.clear {clear: both;}
+
+.quiet {font-size: .75em;}
+.wisper {font-size: .5em;}
+.loud {font-size: 1.25em;}
+.yell {font-size: 1.5em;}
+
+.hidden { display: none !important; }
+
+.thumbnail
+{
+	width: 60px;
+	height: 60px;
+	border: 1px solid #000;
+	margin-right: 5px;
+}
+
+#logo img {max-width: 100%;}
+
+@media all and (max-width: 28em)
+{
+	.unbreakable .ui-input-text
+	{
+		display: inline-block;
+		width: 30%; 
+		margin: 0 2% 0 0;
+	}
+	.unbreakable div
+	{
+		float: right;
+		top: -5px;
+	}
+}
+
+/*
+ * Fixes
+ */
+.quiet .ui-btn-inner { padding-right: 10px;}
+
+.ui-panel-inner .ui-submit
+{
+	margin: 0px;
+}
+
+/*
+ * Web Symbols
+ */
+.text-icon
+{
+	font-family: 'WebSymbolsRegular', cursive;
+	float: left;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.wordwrap
+{
+	white-space: normal;
+}
+
+/*
+ * Horizontal Rules
+ */
+hr.space.clear, hr.space.bottom, hr.space
+{
+	border-width: 0px;
+}
+
+/*
+ * Special Button Styling
+ */
+.footer_buttons a,
+.panel_butons a
+{
+	margin: 0px !important;
+}
+
+.footer_buttons a .ui-btn-text
+{
+	font-size: 9px !important;
+}
+
+.footer_buttons .ui-icon,
+.home_page_buttons .ui-icon,
+.panel_butons .ui-icon
+{
+	background-size: cover;
+	background-color: transparent;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.home_page_buttons .ui-icon
+{
+	width: 22px;
+	height: 22px;
+}
+
+.ui-footer .ui-navbar a,
+.ui-header .ui-navbar a,
+.panel_butons .ui-navbar a
+{
+	border-left-color: black;
+}
+
+.ui-footer .ui-navbar ul li:first-child a,
+.ui-header .ui-navbar ul li:first-child a
+{
+	border-left-width: 0px;
+}
+
+/*custom for development*/
+#debug_button{color: red !important;
+background: blue;
+}
+
+/* media queries */
+
+@media all and (min-width: 650px) {
+  .content-secondary {
+    text-align: left;
+    float: left;
+    width: 48%;
+    background: none;
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content-primary {
+    width: 48%;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content-left-sidebar {
+    text-align: left;
+    float: left;
+    width: 24%;
+    background: none;
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content-right-sidebar {
+    width: 74%;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ui-content h1:first-child,
+  .ui-content h2:first-child,
+  .ui-content:first-child h3
+  {
+    text-align: center;
+  }
+}
+
+/*
+ * Fonts
+ */
+@font-face {
+  font-family: "ComicSansNeueMono";
+  src: url(/font/CosmicSansNeueMono.ttf) format("truetype");
+}
+body,
+input,
+select,
+textarea,
+button,
+.ui-btn {
+	font-family: "ComicSansNeueMono", sans-serif !important;
+}
+
+
